@@ -26,7 +26,9 @@ class History extends Component {
 				}))
 			}
 		})
-		.then(() => this.setState(() => ({ready: true})))
+		.then(() => this.setState(() => ({
+			ready: true
+		})))
 	}
 	renderItem = ({ today, ...metrics}, formattedDate, key)=>(
 		<View style = {styles.item}>
